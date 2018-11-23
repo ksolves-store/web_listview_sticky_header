@@ -3,19 +3,18 @@
     'name': "Sticky Headers",
 
     'summary': """
-        Sticky Header v10.0""",
+      Sticky Header v11.0""",
 
-    'description': """    
+    'description': """
+        
     """,
 
-    'author': "Ksolves ",
+    'author': "Ksolves",
     'website': "https://www.ksolves.com/",
     'license': 'LGPL-3',
-    'images': ['images/main.png'],
     'category': 'Tools',
     'version': '1.0.0',
     'images': ['static/description/main.png'],
-
     'depends': ['base'],
 
     'data': [

@@ -9,7 +9,7 @@ Enhance the user experience by sticking the header of Tree View so that user wil
 ### Installation
 
 -   No external library is used.
--   For odoo v10.
+-   For odoo v11.
 
 ## Authors
 
