@@ -3,7 +3,7 @@
     'name': "Sticky Headers",
 
     'summary': """
-      Sticky Header v11.0""",
+      Sticky Header v12.0""",
 
     'description': """
         
