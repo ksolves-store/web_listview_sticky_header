@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="assets_backend" name="stickyheaders" inherit_id="web.assets_backend">
+		<xpath expr="." position="inside">
+            <script type="application/javascript" src="/web_listview_sticky_header/static/lib/stickytableheaders/jquery.stickytableheaders.js"/>
+            <script type="application/javascript" src="/web_listview_sticky_header/static/js/ks_v10_stick_headers.js"/>
+        </xpath>
+	</template>
+</odoo>
