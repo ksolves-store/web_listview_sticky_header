@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Sticky Headers",
+    'name': "Web List View Sticky Header",
 
     'summary': """
-        Sticky Header v10.0""",
+        "Web List View Sticky Header v10.0""",
 
     'description': """    
     """,
