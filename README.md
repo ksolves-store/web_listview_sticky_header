@@ -1,4 +1,4 @@
-# Sticky Headers
+# Web List View Sticky Header
 
 This application allows users to have a better user experience.
 
