@@ -3,7 +3,7 @@
     'name': "Web List View Sticky Header",
 
     'summary': """
-        "Web List View Sticky Header v10.0""",
+        Web List View Sticky Header v10.0""",
 
     'description': """    
     """,
@@ -13,7 +13,7 @@
     'license': 'LGPL-3',
     'images': ['images/main.png'],
     'category': 'Tools',
-    'version': '1.0.0',
+    'version': '1.0.1',
     'images': ['static/description/main.png'],
 
     'depends': ['base'],
