@@ -24,6 +24,8 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                 sticky();
                 fix_body("fixed");
                 $(window).unbind('resize', sticky).bind('resize', sticky);
+                 this.$el.css("overflow-x","visible");
+                 this.$el.css("overflow-y","visible");
         }
         else{
             fix_body("relative");

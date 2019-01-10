@@ -1,134 +1,307 @@
-<div class="container">
-    <div class="oe_styling_v8">
-        <section style=" margin-top:2%;background: url(https://www.ksolves.com/images/banner/new-ssm.jpg) no-repeat;padding: 20px;color: #ccc;text-align: center;background-size: 100%;">
-            <h1 style="padding-top: 5%;text-transform: uppercase;font-weight: 900;color:#efefef;margin-bottom:18px;font-size: 28px;">
-                 <center>Web List View Sticky Header</center>
-            </h1>
-            <hr style="width: 36%;height: 1px;background:#88898a;margin-top: 0px !important;">
-            <h4 style="font-weight:400;text-align: center;margin-top:5%;font-size: 20px">
-                <a href="https://www.ksolves.com/" style="color:#efefef;text-decoration: none;">Ksolves India Pvt Ltd</a>
-            </h4>
+<!DOCTYPE html>
+<html>
 
-        </section>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Odoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <div style="padding:50px;">
+            <div class="container" style=transform: translateX(26px);">
+                    <!-- First  -->
+                    <div class="row" style="
+                    border: 1px solid #b5b5b5 ;
+                    border-left: none;
+                    border-radius: 35px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    position: relative;
+                    padding: 5% 3% 7%;;
+                    ">
+                        <img src="img/play.png" alt="ksolves" style="
+                        position: absolute;
+                        top: 0px;
+                        width: 33px;
+                        left: 0;
+                        transform: translateY(-50%) translateX(-100%);
+                        ">
+
+                        <img src="img/play.png" alt="ksolves" style="
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%) translateX(50%) rotate(90deg);
+                        width: 33px;
+                        right: 0;
+                        ">
+                        <div class="col-md-6">
+                                <h2 style="color: black;text-align: center;">OVERVIEW</h2>
+                                <div class="text-center">
+                                    <img src="img/line.png" alt="">
+                                </div>
+                                <p style="text-align: center;
+                                padding:20px 20px;
+                                color: #616161;
+                                font-size: 18px;
+                                letter-spacing: 0.2px;
+                                ">
+                             This application ensures that an Odoo user never gets lost in a long list of records again as it sticks the header of Tree View and enhances user experience by mega folds.
+                                </p>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-5">
+                            <img src="img/overview.png" alt="Overview Ksolves" style="width:100%;">
+                        </div>
+                    </div>
+                    <!-- Second -->
+                    <div class="row" style="
+                    border: 1px solid #b5b5b5;
+                    border-right: none;
+                    margin: -1px 16px -1px -52px;
+                    border-radius: 35px;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    padding: 5% 5% 7%;
+                    position: relative;
+                ">
+                        <img src="img/play.png" alt="ksolves" style="
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%) translateX(-50%) rotate(90deg);
+                            width: 33px;
+                            left: 0;
+                            ">
+                      <div class="col-md-5">
+                          <img src="img/features.png" alt="Ksolves paytm features" style="width:80%;margin-top: 40px;">
+                      </div>
+                      <div class="col-md-1"></div>
+                      <div class="col-md-6">
+                            <h2 style="color: black;text-align: center;margin-bottom: 20px;">FEATURES</h2>
+                            <div class="text-center"  style="margin-bottom: 20px;">
+                                    <img src="img/line.png" alt="">
+                                </div>
+                            <ul class="list-unstyled" style="font-size:18px;padding: 10px 40px;color: #616161;">
+                                <li style="margin-bottom: 10px;display:flex;align-items: baseline;">
+                                    <img src="img/hand.png" alt="hand pointer" style="width:16px;margin-right:10px" >
+                                    <span>
+                                        This module enhance the user experience by sticking the header of
+                                   tree View so that user will never get lost in a long list of records.</span>
+                                </li>
+                                <li style="margin-bottom: 10px;display:flex;align-items: baseline;">
+                                    <img src="img/hand.png" alt="hand pointer" style="width:16px;margin-right:10px" >
+                                    <span>
+                                        Horizontal scrolling of table header now possible on horizontal scroll.<span style="font-weight:bold;color:black;" > (Update)</span></span>
+
+                                </li>
+                            </ul>
+                      </div>
+                    </div>
+                    <!-- Third -->
+                    <div class="row" style="
+                    border: 1px solid #b5b5b5;
+                    border-left: none;
+                    border-radius: 35px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    padding: 5% 5% 7% 0;
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                ">
+                              <img src="img/play.png" alt="ksolves" style="
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%) translateX(50%) rotate(90deg);
+                            width: 33px;
+                            right: 0;
+                            ">
+                                 <img src="img/play.png" alt="ksolves" style="
+                            position: absolute;
+                            bottom: 0;
+                            transform: translateY(50%) translateX(-50%) rotate(90deg);
+                            width: 33px;
+                            left: 0;
+                            ">
+                        <h2 style="color: black;text-align: center;width:100%;margin-bottom: 30px;margin-top: 10px;">HOW IT WORKS</h2>
+                        <div class="text-center" style="width:100%;margin-bottom: 20px;">
+                                <img src="img/line.png" alt="">
+                            </div>
+                        <div >
+
+                            <ul style="font-size:18px;margin-top: 20px;color: #616161;">
+                                <li style="margin-bottom: 10px;display:flex;align-items: baseline;">
+                                        <!--<img src="img/hand.png" alt="hand pointer" style="width:16px;margin-right:10px" >-->
+                                        <span>
+                                                <!--Start by going to Payment Acquirer in your e-commerce Odoo site and activating Paytm.-->
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center" style="width:100%;margin-top: 20px;">
+
+                                <img src="StickyHeader.gif" alt=" " style="max-width:100%;">
+
+                        </div>
+                    </div>
+                    <div class="row" style="display:flex;flex-wrap:wrap;padding: 7% 0;">
+                            <h2 style="color: black;text-align: center;width: 100%;">Ksolves Odoo Services</h2>
+                            <div class="text-center" style="width: 100%;margin-bottom: 40px;">
+                                <img src="img/line.png" alt="">
+                            </div>
+                        <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+                            <div style="border: 1px solid black; ;padding: 30px;text-align: center;height: 100%;">
+                                <h4>
+                                    Odoo Implementation
+                                </h4>
+                                <img src="img/support.png" alt="support" style="margin:10px;">
+                                <p>
+                                    Have some implementation in mind, we have got you covered.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+                                <div style="border: 1px solid black; ;padding: 30px;text-align: center;height: 100%;">
+                                    <h4>
+                                            Odoo Community Apps
+                                    </h4>
+                                    <img src="img/apps.png" alt="support" style="margin:10px;">
+
+                                    <p>
+                                            We have a diverse range of Odoo Apps to make your Odoo experience better than ever.
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+                                <div style="border: 1px solid black; ;padding: 30px;text-align: center;height: 100%;">
+                                    <h4>
+                                            Odoo Support and Maintenance
+                                    </h4>
+                                    <img src="img/support2.png" alt="support" style="margin:10px;">
+
+                                    <p>
+                                            We provide exceptional support and maintenance services for Odoo services.
+
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+                                <div style="border: 1px solid black; ;padding: 30px;text-align: center;height: 100%;">
+                                    <h4>
+                                            Odoo Customization
+                                    </h4>
+                                    <img src="img/custom.png" alt="support" style="margin:10px;">
+
+                                    <p>
+                                            Your requirements, our customized implementation. Have something unique in mind, get in touch with us.
+
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+                                <div style="border: 1px solid black; ;padding: 30px;text-align: center;height: 100%;">
+                                    <h4>
+                                            Odoo Integration Services
+                                    </h4>
+                                    <img src="img/integrated.png" alt="support" style="margin:10px;">
+
+                                    <p>
+                                            With our world-class web and API services in Odoo, our integration services are one of the best in the market.
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4" style="margin-bottom: 20px;">
+                                <div style="border: 1px solid black; ;padding: 30px;text-align: center;height: 100%;">
+                                    <h4>
+                                            Odoo Developer Outsourcing
+                                    </h4>
+                                    <img src="img/develop.png" alt="support" style="margin:10px;">
+
+                                    <p>
+                                            Need an experienced, talented Odoo developer? Our developers are the best when it comes to technical knowledge and communication skills.
+                                    </p>
+                                </div>
+                        </div>
+
+                    </div>
 
 
-        <section style="margin-top:2%;background-color:#efefef;padding: 20px;">
-            <h2 style="color: black"><center>OVERVIEW</center></h2>
-            <hr style="width: 5%;height: 1px;background:#88898a;margin-top: 0px !important;margin-bottom: 1.5rem">
-            <p style="text-align: center;padding:20px;color: black;padding: 20px;padding-top: 5px;font-size: 16px; font-weight: bold;">This application ensures that an Odoo user never gets lost in a long list of records again as it sticks the header of Tree View and enhances user experience by mega folds. </p>
-        </section>
-        <section class="jumbotron" style="background-color:transparent; width: 86%;margin-left: 6%;margin-bottom:0 !important;padding: 0 35px !important;margin-top: 50px;">
-            <h2 class="text-center" style="font-size: 20px;color: black;">  <center>FEATURES</center>  </h2>
-            <hr style="width: 5%;height: 1px;background:#88898a;margin-top: 0px !important;margin-bottom: 1.5rem">
-            <ul >
-                <section class="oe_container lead">
-                    <div class="oe_row oe_spaced">
-                        <li>
-                            <section style="font-size: 16px;text-align: justify;color: black;">This module enhance the user experience by sticking the header of
-                                   tree View so that user will never get lost in a long list of records.
-                            </section>
-                        </li>
-                        <br>
-                     
-                        </div>
-                </section>
-            </ul>
-        </section>
-        <section class="jumbotron" style="
-        margin-top:2%;
-        background-color:#efefef;
-        width: 86%;
-        margin-left: 6%;
-        ">
-            <h2 style="font-size: 20px;color: black">
-        <center>HOW IT WORKS</center>
-    </h2>
-            <hr style="width: 5%;height: 1px;background:#88898a;margin-top: 0px !important;margin-bottom: 1.5rem">
-            <div class="container">
-                <section style="font-size: 16px;padding: 20px;color: black;margin-top:20px;background-color: #efefef;">
-                    <img class="img-border img-responsive thumbnail" style="margin-top:20px;transform: translateX(-50%) !important;margin-left: 50%;object-fit: contain;border: 1px solid #dddddd;width: 100%;" src="StickyHeader.gif">
-                </section>
-            </div>
-        </section>
-        <section class="jumbotron" style="margin-top:2%;background-color:transparent; width: 86%;
-        margin-left: 6%;padding: 10px 60px !important;">
-            <h2 style="font-size: 20px;color: black">
-        <center>Ksolves Odoo Services</center>
-    </h2>
-            <hr style="width: 5%;height: 1px;background:#88898a;margin-top: 0px !important;margin-bottom: 3.5rem">
-            <div>
-                <ul>
-                    <li>
-                        <div style="font-size:16px ;color:#3c3b3b;">
-                            <span style="font-weight:bold;color: black;">Odoo Implementation </span><br>Have some implementation in mind, we
-                            have got you covered.
-                        </div>
-                    </li>
-                    <li>
-                        <div style="font-size:16px; color: #3c3b3b;">
-                            <span style="font-weight:bold;color:black;">Odoo Community Apps</span><br>We have a diverse range of Odoo Apps to
-                            make your Odoo experience better than ever.
-                        </div>
-                    </li>
-                    <li>
-                        <div style="font-size:16px;color: #3c3b3b;">
-                            <span style="font-weight:bold;color:black">Odoo Customisation </span><br>Your requirements, our customised
-                            implementation. Have something unique in mind, get in touch with us.
-                        </div>
-                    </li>
-                    <li>
-                        <div style="font-size:16px; color: #3c3b3b;">
-                            <span style="font-weight:bold;color:black;">Odoo Integration Services </span><br>With our world-class web and API
-                            services in Odoo, our integration services are one of the best in the market.
-                        </div>
-                    </li>
-                    <li>
-                        <div style="font-size:16px; color: #3c3b3b;">
-                            <span style="font-weight:bold;color:black;">Odoo Developer Outsourcing </span><br>Need an experienced, talented
-                            Odoo developer? Our developers are the best when it comes to technical knowledge and communication
-                            skills.
-                        </div>
-                    </li>
-                    <li>
-                        <div style="font-size:16px; color: #3c3b3b;">
-                            <span style="font-weight:bold;color:black">Odoo Support and Maintenance </span><br>We provide exceptional
-                            support and maintenance services for Odoo services.
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="col-12">
-            <div class="row" style="background-color: #D4D4D6;color: #515151;margin-left: 0px;margin-right: 0px;padding: 25px;">
-                <div class="col-xs-12 col-sm-4">
-                    <div style="text-align: left;padding: 5% 0%;">
-                        <a href="https://www.ksolves.com/"><img src="./images/ksolves-logo.png"></a>
-            </div>
-                        <div style="margin-left:5px;padding-bottom: 20px;">
-                            <div style="height:30px; width:100%;text-align: left;margin-bottom: 2%;color: black;display:  flex;align-items:  center;">
-                                <img src="./images/gmail.png" height="30px">&nbsp;&nbsp;sales@ksolves.com
 
-                </div>
-                                <div style=" height: 30px;;width:100%;text-align: left;margin-bottom: 2%;color: black;display:  flex;align-items:  center;">
-                                    <img src="./images/phone-receiver.png" height="30px">&nbsp;&nbsp;+91 120-4299799‬
-                </div>
+
+                        <div class="row" >
+                            <div class="col-md-4" style="
+                            border-top: 1px solid;
+                            margin-bottom: 20px;
+                            text-align: center
+                        ">
+
+
+                                            <div class="contact">
+                                                    <img src="img/email-in-circular-button.png" alt="ksolves mail" style="width: 40px;margin: 10px;">
+                                                    <div  style="font-size: 18px;">sales@ksolves.com</div>
+                                            </div>
+                            </div>
+                                <div class="col-md-4" style="text-align: center;padding-bottom: 20px;">
+                                        <img src="img/ksolves-logo.png" alt="Ksolves india pvt ltd" style="
+                                        transform: translateY(-50%);
+
+                                    ">
+
+                                    </div>
+                            <div class="col-md-4" style="
+                            border-top: 1px solid;
+                             margin-bottom: 20px;
+                            text-align: center
+                        " >
+
+                                    <div style="text-align: center">
+                                            <img src="img/phone-contact.png" alt="ksolves contact" style="width: 40px;margin: 10px;" >
+                                            <div style="font-size: 18px;">+91 120-4299799‬</div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-4 col-sm-push-4" style=" text-align: justify;">
-                                <div style="padding: 0px 0 20px 0; color: black;"> Incepted in 2014, Ksolves has made its presence felt across various verticals, including Odoo
-                                    implementation, cloud-based technologies like AWS and Salesforce cloud, Serverless application development,
-                                    Hybrid and native mobile applications and Application architecture consulting etc.</div>
-                            </div>
-                            <div class="col-xs-12 col-sm-4 col-sm-pull-4" style="float:left;    padding-top: 3%;">
-                                <div style="height:50px; width:100%;padding: 3% 5%;text-align: center;margin-bottom: 3%;">
-                                    <a href="https://www.facebook.com/Ksolves.India">
-                                         <img src="./images/facebook-logo-button.png" height="25px" style="margin:2%;"></a>
-                                    <a href="https://www.linkedin.com/company/ksolves"><img src="./images/linkedin-button.png" height="25px" style="margin:2%;"></a>
-                                    <a href="https://www.youtube.com/channel/UCplv9V47g9VidekGN6Wp1ew"><img src="./images/youtube-logotype.png" height="25px" style="margin:2%;"></a>
-                                    <a href="https://twitter.com/ksolves_india"><img src="./images/twitter-logo-button.png" height="25px" style="margin:2%;"></a>
-                                </div>
-                            </div>
+
+
                         </div>
-        </section>
+                        <div style="
+                        max-width: 600px;
+                        margin: auto;
+                    ">
+                                <div style="height:50px;border-left:1px solid black;margin-left: 52%"></div>
+
+                                <p style="line-height: 30px;text-align: center;margin-top: 20px;">
+                                        Incepted in 2012, Ksolves has made its presence felt across various verticals, including Odoo implementation, cloud-based technologies like AWS and Salesforce cloud, Serverless application development, Hybrid and native mobile applications and Application architecture consulting etc.
+                                    </p>
+                                <div class="social" style="width: 100%;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;">
+                                            <a href="https://www.facebook.com/Ksolves.India">
+                                                <img src="img/social-facebook-circular-button.png" alt="ksolves facebook" style="width: 30px;margin-left: 10px;margin-top: 20px;">
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/ksolves">
+                                                <img src="img/social-linkedin-circular-button.png" alt="ksolves linkedin" style="width: 30px;margin-left: 30px;margin-top: 20px;">
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCplv9V47g9VidekGN6Wp1ew">
+                                            <img src="img/social-youtube-circular-button.png" alt="ksolves youtubr" style="width: 30px;margin-left: 30px;margin-top: 20px;">
+                                    </a>
+                                        <a href="https://twitter.com/ksolves_india">
+                                                <img src="img/social-twitter-circular-button.png" alt="ksolves twitter" style="width: 30px;margin-left: 30px;margin-top: 20px;">
+                                        </a>
+
+                                    </div>
+                        </div>
+                    <!-- container End -->
+
+                </div>
     </div>
-</div>
+</body>
+
+</html>

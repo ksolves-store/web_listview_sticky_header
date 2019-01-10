@@ -143,7 +143,7 @@
 						offset = $this.offset(),
 
 						scrollTop = base.$scrollableArea.scrollTop() + newTopOffset,
-						scrollLeft = base.$scrollableArea.scrollLeft(),
+						scrollLeft = 0,
 
 						headerHeight = base.options.cacheHeaderHeight ? base.cachedHeaderHeight : base.$clonedHeader.height(),
 
