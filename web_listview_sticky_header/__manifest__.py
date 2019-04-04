@@ -1,12 +1,19 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Web List View Sticky Header",
+    'name': "List View Sticky Header",
 
     'summary': """
-      Web List View Sticky Header v12.0""",
+      List View Sticky Header v12.0""",
 
     'description': """
-        
+	- Sticky Header
+	- List Sticky Header
+	- Header Sticky
+	- Fix Header
+	- Header Fix
+	- Table Header Fix
+	- Table List Fix 
+	- Table Hedar Sticky	
     """,
 
     'author': "Ksolves",
@@ -14,7 +21,7 @@
     'license': 'LGPL-3',
     'category': 'Tools',
     'version': '1.0.2',
-    'images': ['static/description/main.png'],
+    'images': ['static/description/main.jpg'],
     'depends': ['base'],
 
     'data': [
