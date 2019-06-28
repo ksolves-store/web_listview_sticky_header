@@ -16,7 +16,7 @@
 	- Table Hedar Sticky  
     """,
 
-    'author': "Ksolves ",
+    'author': "Ksolves India Pvt. Ltd.",
     'website': "https://www.ksolves.com/",
     'license': 'LGPL-3',
     'images': ['images/main.png'],
