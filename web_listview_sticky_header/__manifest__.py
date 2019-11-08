@@ -3,7 +3,7 @@
     'name': "List View Sticky Header",
 
     'summary': """
-      List View Sticky Header v12.0""",
+      List View Sticky Header v13.0""",
 
     'description': """
 	- Sticky Header
@@ -20,8 +20,8 @@
     'website': "https://www.ksolves.com/",
     'license': 'LGPL-3',
     'category': 'Tools',
-    'version': '1.0.2',
-    'images': ['static/description/main.jpg'],
+    'version': '13.0.1.0.0',
+    'images': ['static/description/main.png'],
     'depends': ['base'],
 
     'data': [
