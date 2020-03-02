@@ -7,6 +7,7 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
         var  $self=this;
         var res = old_render.call(this);
         var o_content_area = $(".o_content")[0];
+        $(".o_content").css({'overflow':'auto'});
         function sticky(){
             $self.$el.find("table.o_list_view").each(function () {
                     $(this).stickyTableHeaders({scrollableArea: o_content_area, fixedOffset: 0.1});
