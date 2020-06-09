@@ -48,7 +48,7 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
             }
             else{
                 fix_body("relative", false);
-                console.log("Else")
+
             }
 
             $("div[class='o_sub_menu']").css("z-index",4);
