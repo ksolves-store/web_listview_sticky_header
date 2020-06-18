@@ -20,7 +20,7 @@
     'website': "https://www.ksolves.com/",
     'license': 'LGPL-3',
     'category': 'Tools',
-    'version': '13.0.1.0.0',
+    'version': '14.0.0.0.0',
     'images': ['static/description/main.png'],
     'depends': ['base'],
 
