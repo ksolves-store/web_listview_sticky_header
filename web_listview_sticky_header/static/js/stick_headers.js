@@ -22,14 +22,18 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                 function fix_body(position){
                      $("body").css({
                        'position': position,
+
+
                     });
                 }
 
-                if(this.$el.parents('.o_field_one2many').length===0){
+
+                if(this.$el.parents('.o_field_one2many').length === 0){
                         sticky();
                         fix_body("fixed");
                         $(window).unbind('resize', sticky).bind('resize', sticky);
                         this.$el.css("overflow-x","visible");
+                        this.$el.css("overflow-y","visible");
                 }
                 else{
                     fix_body("relative");
@@ -50,7 +54,6 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
         var fieldIndex = Math.max($tr.find('.o_field_cell').index($td), 0);
         this._selectCell(rowIndex, fieldIndex, {event: event});
     },
-
     setRowMode: function (recordID, mode) {
         var self = this;
         return this._super.apply(this, arguments).then(function (){
@@ -59,6 +62,5 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
             self.currentRow = editMode ? $row.index() : null;
         });
     }
-
     });
 });
