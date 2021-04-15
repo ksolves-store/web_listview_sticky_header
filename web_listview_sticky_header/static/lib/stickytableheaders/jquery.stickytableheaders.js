@@ -61,7 +61,7 @@
 				base.$clonedHeader.css({display: 'none', opacity: 0.0});
 
 				base.$originalHeader.addClass('tableFloatingHeaderOriginal');
-				base.$originalHeader.prepend(
+				base.$originalHeader.append(
                         $('<i class="o_optional_columns_dropdown_toggle fa fa-ellipsis-v"/>')
                     );
 

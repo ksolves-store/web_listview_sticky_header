@@ -18,7 +18,7 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                     self.$el.find(".table.o_list_table").each(function () {
                         $(this).stickyTableHeaders({scrollableArea: o_content_area, fixedOffset: 0.1});
                     });
-                   $(".o_optional_columns_dropdown_toggle").css("z-index","1000")
+//                   $(".o_optional_columns_dropdown_toggle").css("z-index","1000")
                   }
 
                 function fix_body(position){
