@@ -10,8 +10,10 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
             else{
                 var self = this;
                 const table = this.el.getElementsByTagName('table')[0];
-
-                this.el.getElementsByClassName('o_optional_columns')[0].style.left = window.screen.width;
+                var o_optional_columns = this.$el.find('.o_optional_columns');
+                if(o_optional_columns.length){
+                    $(o_optional_columns).css("left",window.screen.width+"px");
+                }
 
                 var o_content_area = $(".o_content")[0];
 
