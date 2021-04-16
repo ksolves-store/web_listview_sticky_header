@@ -19,6 +19,8 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                         $(this).stickyTableHeaders({scrollableArea: o_content_area, fixedOffset: 0.1});
                     });
 //                   $(".o_optional_columns_dropdown_toggle").css("z-index","1000")
+                    self.el.getElementsByClassName('o_optional_columns')[0].style.left = self.$el.find('.tableFloatingHeaderOriginal')[0].style.width;
+
                   }
 
                 function fix_body(position){
@@ -33,6 +35,9 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                 if(this.$el.parents('.o_field_one2many').length === 0){
                         sticky();
                         fix_body("fixed");
+//                        this.el.getElementsByClassName('o_optional_columns_dropdown')[0].style.top = self.$el.find('.tableFloatingHeaderOriginal')[0].style.top;
+//                        this.el.getElementsByClassName('o_optional_columns_dropdown')[0].style.position = 'fixed';
+
                         $(window).unbind('resize', sticky).bind('resize', sticky);
                         this.$el.css("overflow-x","visible");
                         this.$el.css("overflow-y","visible");
