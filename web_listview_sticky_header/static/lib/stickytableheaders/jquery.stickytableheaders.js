@@ -61,9 +61,6 @@
 				base.$clonedHeader.css({display: 'none', opacity: 0.0});
 
 				base.$originalHeader.addClass('tableFloatingHeaderOriginal');
-				base.$originalHeader.append(
-                        $('<i class="o_optional_columns_dropdown_toggle fa fa-ellipsis-v"/>')
-                    );
 				base.$originalHeader.after(base.$clonedHeader);
 
 				base.$printStyle = $('<style type="text/css" media="print">' +
@@ -154,7 +151,7 @@
 								newTopOffset > offset.top,
 						notScrolledPastBottom = (base.isWindowScrolling ? scrollTop : 0) <
 							(offset.top + $this.height() - headerHeight - (base.isWindowScrolling ? 0 : newTopOffset));
-
+                   $(".o_optional_columns_dropdown_toggle").css("top", newTopOffset+"px");
 					if (scrolledPastTop && notScrolledPastBottom) {
 						newLeft = offset.left - scrollLeft + base.options.leftOffset;
 						base.$originalHeader.css({
