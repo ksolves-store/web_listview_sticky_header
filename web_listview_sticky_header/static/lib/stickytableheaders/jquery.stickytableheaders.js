@@ -157,6 +157,7 @@
                    $(".o_optional_columns").css('position', 'fixed');
                    $(".o_optional_columns").css('z-index', '100');
                    $(".o_optional_columns").css('top', newTopOffset+"px");
+                   $(".o_optional_columns").css('left', "");
 
 					if (scrolledPastTop && notScrolledPastBottom) {
 						newLeft = offset.left - scrollLeft + base.options.leftOffset;
