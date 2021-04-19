@@ -64,10 +64,6 @@
 				base.$originalHeader.append(
                         $('<i class="o_optional_columns_dropdown_toggle fa fa-ellipsis-v"/>')
                     );
-
-//                document.getElementsByClassName('o_optional_columns').style.left = window.screen.width;
-//                document.getElementsByClassName('o_optional_columns').style.left = window.screen.width;
-
 				base.$originalHeader.after(base.$clonedHeader);
 
 				base.$printStyle = $('<style type="text/css" media="print">' +

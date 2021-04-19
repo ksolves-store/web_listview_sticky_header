@@ -19,25 +19,7 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
 
                 if (o_optional_columns.length && origional_header.length && o_optional_columns_div.length) {
                     $(o_optional_columns).css('left',origional_header[0].style.width);
-//                    $(o_optional_columns).css('top','0');
-//                    $(o_optional_columns).css("z-index", "100");
                 }
-
-//                function getPos(el) {
-//                    // yay readability
-//                    for (var lx=0, ly=0;
-//                        el != null;
-//                        lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
-//                    return {x: lx,y: ly};
-//                }
-
-//                console.log(getPos(o_optional_columns[0]));
-//                console.log(getPos(origional_header[0]));
-//                if (o_optional_columns.length){
-//                    console.log(o_optional_columns[0].style.top);
-////                    console.log(o_optional_columns[0].scroll());
-//                }
-
 
                 function sticky(){
 
@@ -64,19 +46,6 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                     fix_body("relative");
                 }
                 $("div[class='o_sub_menu']").css("z-index",4);
-            }
-        },
-
-        _onToggleOptionalColumn: function (ev) {
-            var self = this;
-            this._super.apply(this, arguments);
-
-            var o_optional_columns = this.$el.find('.o_optional_columns');
-            var o_optional_columns_div = this.$el.find('.o_optional_columns_dropdown');
-            var origional_header = this.$el.find('.tableFloatingHeaderOriginal');
-
-            if (o_optional_columns.length && origional_header.length && o_optional_columns_div.length) {
-                $(o_optional_columns).css('left',origional_header[0].style.width);
             }
         },
 
