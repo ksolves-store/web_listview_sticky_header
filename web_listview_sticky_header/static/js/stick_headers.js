@@ -44,16 +44,11 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                     self.$el.find(".table.o_list_table").each(function () {
                         $(this).stickyTableHeaders({scrollableArea: o_content_area, fixedOffset: 0.1});
                     });
-//                   $(".o_optional_columns_dropdown_toggle").css("z-index","1000")
-//                    self.el.getElementsByClassName('o_optional_columns')[0].style.left = self.$el.find('.tableFloatingHeaderOriginal')[0].style.width;
-
                   }
 
                 function fix_body(position){
                      $("body").css({
                        'position': position,
-
-
                     });
                 }
 
@@ -61,9 +56,6 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                 if(this.$el.parents('.o_field_one2many').length === 0){
                         sticky();
                         fix_body("fixed");
-//                        this.el.getElementsByClassName('o_optional_columns_dropdown')[0].style.top = self.$el.find('.tableFloatingHeaderOriginal')[0].style.top;
-//                        this.el.getElementsByClassName('o_optional_columns_dropdown')[0].style.position = 'fixed';
-
                         $(window).unbind('resize', sticky).bind('resize', sticky);
                         this.$el.css("overflow-x","visible");
                         this.$el.css("overflow-y","visible");
@@ -72,6 +64,31 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                     fix_body("relative");
                 }
                 $("div[class='o_sub_menu']").css("z-index",4);
+            }
+        },
+
+        _onToggleOptionalColumn: function (ev) {
+            var self = this;
+            this._super.apply(this, arguments);
+
+            var o_optional_columns = this.$el.find('.o_optional_columns');
+            var o_optional_columns_div = this.$el.find('.o_optional_columns_dropdown');
+            var origional_header = this.$el.find('.tableFloatingHeaderOriginal');
+
+            if (o_optional_columns.length && origional_header.length && o_optional_columns_div.length) {
+                $(o_optional_columns).css('left',origional_header[0].style.width);
+            }
+        },
+
+        _onToggleOptionalColumnDropdown: function (ev) {
+            var self = this;
+            this._super.apply(this, arguments);
+            var o_optional_columns = this.$el.find('.o_optional_columns');
+            var o_optional_columns_div = this.$el.find('.o_optional_columns_dropdown');
+            var origional_header = this.$el.find('.tableFloatingHeaderOriginal');
+
+            if (o_optional_columns.length && origional_header.length && o_optional_columns_div.length) {
+                $(o_optional_columns).css('left',origional_header[0].style.width);
             }
         },
 
