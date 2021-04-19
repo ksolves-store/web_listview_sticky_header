@@ -41,18 +41,6 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
             }
         },
 
-//    _onToggleOptionalColumn: function (ev) {
-//        var self = this;
-//        this._super.apply(this, arguments);
-//
-//        var o_optional_columns = this.$el.find('.o_optional_columns');
-//        var o_optional_columns_div = this.$el.find('.o_optional_columns_dropdown');
-//        var origional_header = this.$el.find('.tableFloatingHeaderOriginal');
-//        if (o_optional_columns.length && origional_header.length && o_optional_columns_div.length) {
-//            $(o_optional_columns).css('left',origional_header[0].style.width);
-//        }
-//    },
-
     _onCellClick: function (event) {
         // The special_click property explicitely allow events to bubble all
         // the way up to bootstrap's level rather than being stopped earlier.
