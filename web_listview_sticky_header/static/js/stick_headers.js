@@ -17,13 +17,11 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                     self.$el.find(".table.o_list_table").each(function () {
                         $(this).stickyTableHeaders({scrollableArea: o_content_area, fixedOffset: 0.1});
                     });
-                }
+                  }
 
                 function fix_body(position){
                      $("body").css({
                        'position': position,
-
-
                     });
                 }
 
