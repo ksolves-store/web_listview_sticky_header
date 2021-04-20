@@ -151,12 +151,12 @@
 								newTopOffset > offset.top,
 						notScrolledPastBottom = (base.isWindowScrolling ? scrollTop : 0) <
 							(offset.top + $this.height() - headerHeight - (base.isWindowScrolling ? 0 : newTopOffset));
-                   $(".o_optional_columns_dropdown_toggle").css("top", newTopOffset+"px");
+	           $(".o_optional_columns_dropdown_toggle").css("top", newTopOffset+"px");
 
-                   $(".o_optional_columns").css("right", '12px');
-                   $(".o_optional_columns").css('position', 'fixed');
-                   $(".o_optional_columns").css('z-index', '100');
-                   $(".o_optional_columns").css('top', newTopOffset+"px");
+	           $(".o_optional_columns").css("right", '12px');
+	           $(".o_optional_columns").css('position', 'fixed');
+	           $(".o_optional_columns").css('z-index', '100');
+	           $(".o_optional_columns").css('top', newTopOffset+"px");
 
 					if (scrolledPastTop && notScrolledPastBottom) {
 						newLeft = offset.left - scrollLeft + base.options.leftOffset;

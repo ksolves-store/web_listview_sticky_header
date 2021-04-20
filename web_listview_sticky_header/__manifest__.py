@@ -12,21 +12,21 @@
 	- Fix Header
 	- Header Fix
 	- Table Header Fix
-	- Table List Fix 
+	- Table List Fix
 	- Table Hedar Sticky
-	Tree view header, 
-	header freeze, 
-	odoo custom view app, 
-	sticky view in odoo, 
-	odoo view app, 
-	listviewstickyheader, 
-	all in one sticky, 
-	freeze view in odoo, 
-	freeze list view , 
-	sticky pivot view, 
-	sticky pivot view header, 
-	fixed pivot view header, 
-	freeze header, 
+	Tree view header,
+	header freeze,
+	odoo custom view app,
+	sticky view in odoo,
+	odoo view app,
+	listviewstickyheader,
+	all in one sticky,
+	freeze view in odoo,
+	freeze list view ,
+	sticky pivot view,
+	sticky pivot view header,
+	fixed pivot view header,
+	freeze header,
 	pivot view freeze header,
     """,
 
