@@ -158,6 +158,9 @@
 	           $(".o_optional_columns").css('z-index', '100');
 	           $(".o_optional_columns").css('top', newTopOffset+"px");
 
+	           $(".o_optional_columns_dropdown").css('max-height', ($(".o_list_view").height()-29)+"px");
+	           $(".o_optional_columns_dropdown").css('overflow', 'auto');
+
 					if (scrolledPastTop && notScrolledPastBottom) {
 						newLeft = offset.left - scrollLeft + base.options.leftOffset;
 						base.$originalHeader.css({
