@@ -4,7 +4,7 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
     ListView.include({
 
     _freezeColumnWidths: function () {
-            if(this.getParent().$el.hasClass("o_field_one2many") !== false || this.getParent().$el.hasClass("o_field_many2many") !== false) {
+            if(this.getParent() && this.getParent().$el && (this.getParent().$el.hasClass("o_field_one2many") !== false || this.getParent().$el.hasClass("o_field_many2many") !== false)) {
                 this._super.apply(this,arguments);
             }
             else{
