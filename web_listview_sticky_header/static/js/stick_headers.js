@@ -58,7 +58,19 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
             var $row = self._getRow(recordID);
             self.currentRow = editMode ? $row.index() : null;
         });
-    }
+    },
+    on_attach_callback: function () {
+        var self = this;
+        $("div.modal-footer a").bind('click', function() {
+                if($(this).prop("href").split("/.")[1] && $(this).prop("href").split("/.")[1] === "o_onboarding_container") {
+                    setTimeout(function(){
+                        if($(".o_content").length && (($(".o_content").offset().top+1) != $(".tableFloatingHeaderOriginal").css("top"))) {
+                            $(".tableFloatingHeaderOriginal").css("top",$(".o_content").offset().top+0.50);
+                        }
+                    },400);
+                }
+        });
+     }
 
     });
 });
