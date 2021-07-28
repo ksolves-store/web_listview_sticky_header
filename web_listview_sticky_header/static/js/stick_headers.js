@@ -4,7 +4,7 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
     ListView.include({
 
     _freezeColumnWidths: function () {
-            if(this.getParent().$el.hasClass("o_field_one2many") !== false || this.getParent().$el.hasClass("o_field_many2many") !== false) {
+            if(this.getParent() && this.getParent().$el && (this.getParent().$el.hasClass("o_field_one2many") !== false || this.getParent().$el.hasClass("o_field_many2many") !== false)) {
                 this._super.apply(this,arguments);
             }
             else{
@@ -58,7 +58,19 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
             var $row = self._getRow(recordID);
             self.currentRow = editMode ? $row.index() : null;
         });
-    }
+    },
+    on_attach_callback: function () {
+        var self = this;
+        $("div.modal-footer a").bind('click', function() {
+                if($(this).prop("href").split("/.")[1] && $(this).prop("href").split("/.")[1] === "o_onboarding_container") {
+                    setTimeout(function(){
+                        if($(".o_content").length && (($(".o_content").offset().top+1) != $(".tableFloatingHeaderOriginal").css("top"))) {
+                            $(".tableFloatingHeaderOriginal").css("top",$(".o_content").offset().top+0.50);
+                        }
+                    },400);
+                }
+        });
+     }
 
     });
 });
