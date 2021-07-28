@@ -187,6 +187,13 @@
 						$this.trigger('disabledStickiness.' + name);
 					}
 				});
+                // fix in case header is not scrolling if horizontally.
+                var offset = $('.table-responsive').offset();
+                var offset_left = offset && offset.left || 0;
+                $('.table-responsive').scroll(function(){
+                    let scroll = offset_left - $('.table-responsive').scrollLeft();
+                    $('.tableFloatingHeaderOriginal').css({ left: scroll });
+                });
 			}
 		}, 0);
 
