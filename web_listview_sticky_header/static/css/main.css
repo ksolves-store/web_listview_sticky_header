@@ -1,6 +1,32 @@
-i.o_optional_columns_dropdown_toggle{
+i.o_optional_columns_dropdown_toggle {
     z-index: 1000 !important;
-    position: fixed !important;
-    top: 133px;
+    position: absolute !important;
+    top: 0px !important;
     background: white;
+}
+
+
+.o_form_view .o_optional_columns {
+    right: 0px !important;
+    position: absolute !important;
+    z-index: 100;
+    top: 0px !important;
+}
+.o_list_view .o_optional_columns {
+    right: 0px !important;
+    position: absolute !important;
+    z-index: 100;
+    top: 0px !important;
+}
+
+.o_list_view .o_list_table > thead.tableFloatingHeaderOriginal {
+    position: sticky !important;
+    top: 0px !important;
+}
+
+.o_list_view .o_list_table > thead.tableFloatingHeader {
+    display: none;
+}
+.o_content > .o_list_view > .table-responsive > .table:not(.o_list_table_grouped) > thead > tr > :not(:empty) {
+    max-width: none !important;
 }
