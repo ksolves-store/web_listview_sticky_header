@@ -22,6 +22,7 @@ i.o_optional_columns_dropdown_toggle {
 .o_list_view .o_list_table > thead.tableFloatingHeaderOriginal {
     position: sticky !important;
     top: 0px !important;
+    z-index: 5 !important;
 }
 
 .o_list_view .o_list_table > thead.tableFloatingHeader {
@@ -29,4 +30,14 @@ i.o_optional_columns_dropdown_toggle {
 }
 .o_content > .o_list_view > .table-responsive > .table:not(.o_list_table_grouped) > thead > tr > :not(:empty) {
     max-width: none !important;
+}
+@media (max-width: 767.98px){
+  html .o_web_client > .o_action_manager > .o_action > .o_content {
+    height: 100%;
+    max-height: 85%;
+  }
+  .o_view_controller > .o_content > .o_list_view > .table-responsive {
+    height: 100%;
+    max-height: 90%;
+  }
 }
