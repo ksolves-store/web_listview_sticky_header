@@ -31,3 +31,20 @@ i.o_optional_columns_dropdown_toggle {
 .o_content > .o_list_view > .table-responsive > .table:not(.o_list_table_grouped) > thead > tr > :not(:empty) {
     max-width: none !important;
 }
+.o_list_view .o_list_table {
+  table-layout: fixed;
+}
+.o_activity_exception_cell{
+  width: 25px !important;
+}
+.o_list_view .o_list_table .o_list_record_selector {
+    width: 40px !important;
+    max-width: none !important;
+}
+.o_list_view .o_list_table .o_handle_cell {
+    width: 34px;
+    min-width:32px !important;
+}
+.o_list_view .o_list_table .o_column_sortable{
+  max-width: none !important;
+}
