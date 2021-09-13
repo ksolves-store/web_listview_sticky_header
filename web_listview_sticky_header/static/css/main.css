@@ -23,6 +23,7 @@ i.o_optional_columns_dropdown_toggle {
 .o_list_view .o_list_table > thead.tableFloatingHeaderOriginal {
     position: sticky !important;
     top: 0px !important;
+    z-index: 5 !important;
 }
 
 .o_list_view .o_list_table > thead.tableFloatingHeader {
@@ -30,4 +31,49 @@ i.o_optional_columns_dropdown_toggle {
 }
 .o_content > .o_list_view > .table-responsive > .table:not(.o_list_table_grouped) > thead > tr > :not(:empty) {
     max-width: none !important;
+}
+@media (max-width: 767.98px){
+  html .o_web_client > .o_action_manager > .o_action > .o_content {
+    height: 100%;
+    max-height: 85%;
+  }
+  .o_view_controller > .o_content > .o_list_view > .table-responsive {
+    height: 100%;
+    max-height: 90%;
+  }
+  .o_view_controller > .o_controller_with_searchpanel > .o_list_view > .table-responsive {
+    height: 100%;
+    max-height: 75%;
+  }
+  .o_list_view .o_list_table > thead > tr:first-child > th {
+    border: none;
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 5 !important;
+  }
+   html .o_web_client > .o_action_manager > .o_action > .o_content .o_list_view {
+    position: relative;
+    height: calc(100% - 85px);
+  }
+}
+
+@media (min-width:1100px){
+  .o_list_view .o_list_table {
+    table-layout: fixed;
+  }
+}
+
+.o_activity_exception_cell{
+  width: 25px !important;
+}
+.o_list_view .o_list_table .o_list_record_selector {
+    width: 40px !important;
+    max-width: none !important;
+}
+.o_list_view .o_list_table .o_handle_cell {
+    width: 34px;
+    min-width:32px !important;
+}
+.o_list_view .o_list_table .o_column_sortable{
+  max-width: none !important;
 }
