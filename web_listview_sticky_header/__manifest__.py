@@ -30,11 +30,11 @@
 	pivot view freeze header,
     """,
 
-    'author': "Ksolves India Pvt. Ltd.",
+    'author': "Ksolves India Ltd.",
     'website': "https://www.ksolves.com/",
     'license': 'LGPL-3',
     'category': 'Tools',
-    'version': '13.0.2.0.2 ',
+    'version': '13.0.2.0.3 ',
     'images': ['static/description/main.png'],
     'depends': ['base'],
 
