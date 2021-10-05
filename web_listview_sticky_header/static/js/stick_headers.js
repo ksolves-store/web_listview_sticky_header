@@ -12,6 +12,7 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                 const table = this.el.getElementsByTagName('table')[0];
 
                 var o_content_area = $(".o_content")[0];
+                self.decorateBadgeUI();
 
                 function sticky(){
                     self.$el.find(".table.o_list_table").each(function () {
@@ -73,15 +74,6 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                 }
         });
      },
-     _renderView: function () {
-            if (!this.ks_lvm_mode) return this._super.apply(this, arguments);
-            var self = this;
-            self.ks_set_width_according_to_result();
-        },
-      ks_set_width_according_to_result: function () {
-            var self = this;
-            self.decorateBadgeUI();
-       },
      _renderBodyCell: function (record, node, colIndex, options) {
             var ks_td_cell = this._super.apply(this, arguments);
             if (this.fieldDecorations[node.attrs.name]){
