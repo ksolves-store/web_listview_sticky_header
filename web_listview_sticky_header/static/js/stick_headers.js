@@ -81,7 +81,7 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
       ks_set_width_according_to_result: function () {
             var self = this;
             self.decorateBadgeUI();
-     }
+     },
      _renderBodyCell: function (record, node, colIndex, options) {
             var ks_td_cell = this._super.apply(this, arguments);
             if (this.fieldDecorations[node.attrs.name]){
