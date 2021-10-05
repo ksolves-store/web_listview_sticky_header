@@ -62,6 +62,7 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
     },
     on_attach_callback: function () {
         var self = this;
+        self.decorateBadgeUI();
         $("div.modal-footer a").bind('click', function() {
                 if($(this).prop("href").split("/.")[1] && $(this).prop("href").split("/.")[1] === "o_onboarding_container") {
                     setTimeout(function(){
@@ -72,6 +73,40 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
                 }
         });
      },
+     _renderBodyCell: function (record, node, colIndex, options) {
+            var ks_td_cell = this._super.apply(this, arguments);
+            if (this.fieldDecorations[node.attrs.name]){
+                this._setDecorationClasses(ks_td_cell, this.fieldDecorations[node.attrs.name], record);
+            }
+            return ks_td_cell;
+        },
+        _setDecorationClasses: function ($el, decorations, record) {
+            for (const [cssClass, expr] of Object.entries(decorations)) {
+                $el.toggleClass(cssClass, py.PY_isTrue(py.evaluate(expr, record.evalContext)));
+            }
+        },
+
+     decorateBadgeUI:function(){
+            const badges = $(".o_badge_cell.o_field_cell");
+            const ks_self = this;
+            if(!badges){
+                return;
+            }
+            else{
+                _.each(badges,function(badge){
+                    _.each(badge.classList,function(badgeClass){
+                      if(badgeClass.indexOf(('text-')) != -1){
+                          const newCssClass = `bg-${badgeClass.split('-')[1]}-light`
+                          $(this).toggleClass(badgeClass);
+                          $(this).find("span").toggleClass(newCssClass);
+                      }
+                    },badge);
+                });
+
+            }
+
+
+        },
 
     });
 });
