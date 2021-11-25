@@ -1,0 +1,6 @@
+.modal-content > .modal-body > .o_view_controller > .table-responsive > .o_list_view > .tableFloatingHeaderOriginal{
+  position: unset !important
+}
+.modal-content > .modal-body > .o_view_controller > .table-responsive > .o_list_view > .tableFloatingHeader{
+  display: none !important
+}
