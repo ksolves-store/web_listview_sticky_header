@@ -33,6 +33,7 @@
     'author': "Ksolves India Pvt. Ltd.",
     'website': "https://www.ksolves.com/",
     'license': 'LGPL-3',
+    'currency': 'EUR',
     'category': 'Tools',
     'version': '1.1.3',
     'images': ['static/description/main.jpg'],
