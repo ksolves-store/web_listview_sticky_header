@@ -34,6 +34,7 @@
     'website': "https://www.ksolves.com/",
     'license': 'LGPL-3',
     'currency': 'EUR',
+    'price': '0.0',
     'category': 'Tools',
     'version': '1.1.3',
     'images': ['static/description/main.jpg'],
