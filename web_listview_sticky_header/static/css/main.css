@@ -1,6 +1,12 @@
 .modal-content > .modal-body > .o_view_controller > .table-responsive > .o_list_view > .tableFloatingHeaderOriginal{
-  position: unset !important
+  position: unset !important;
 }
 .modal-content > .modal-body > .o_view_controller > .table-responsive > .o_list_view > .tableFloatingHeader{
-  display: none !important
+  display: none !important;
+}
+
+@media (max-width: 767.98px){
+.o_list_view thead > tr > th {
+    overflow: hidden !important;
+}
 }
