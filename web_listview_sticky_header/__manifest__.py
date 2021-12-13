@@ -35,7 +35,7 @@
     'license': 'LGPL-3',
     'category': 'Tools',
     'version': '15.0.1.0.0',
-    'images': ['static/description/main.jpg'],
+    'images': ['static/description/LIst_View_Stick_Header.jpg'],
     'depends': ['base'],
 
     'assets': {
