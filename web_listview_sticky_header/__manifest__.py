@@ -3,7 +3,7 @@
     'name': "List View Sticky Header",
 
     'summary': """
-      List View Sticky Header v14.0""",
+      List View Sticky Header v15.0""",
 
     'description': """
 	- Sticky Header
@@ -31,15 +31,19 @@
     """,
 
     'author': "Ksolves India Ltd.",
-    'website': "https://www.ksolves.com/",
+    'website': "https://store.ksolves.com/",
     'license': 'LGPL-3',
     'category': 'Tools',
-    'version': '14.0.1.0.5',
-    'images': ['static/description/main.jpg'],
+    'version': '15.0.1.0.0',
+    'images': ['static/description/LIst_View_Stick_Header.jpg'],
     'depends': ['base'],
 
-    'data': [
-        'views/assets.xml',
-    ],
+    'assets': {
+        'web.assets_backend': [
+            'web_listview_sticky_header/static/lib/stickytableheaders/jquery.stickytableheaders.js',
+            'web_listview_sticky_header/static/js/stick_headers.js',
+            'web_listview_sticky_header/static/css/main.css',
+        ]
+    }
 
 }
