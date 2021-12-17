@@ -33,6 +33,7 @@
     'author': "Ksolves India Ltd.",
     'website': "https://store.ksolves.com/",
     'license': 'LGPL-3',
+    'currency': 'EUR',
     'category': 'Tools',
     'version': '15.0.1.0.0',
     'images': ['static/description/LIst_View_Stick_Header.jpg'],
