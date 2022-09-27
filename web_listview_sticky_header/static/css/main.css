@@ -41,3 +41,8 @@ i.o_optional_columns_dropdown_toggle {
     max-height: 90%;
   }
 }
+.o_list_view .o_list_table thead {
+position: sticky;
+top: 0;
+z-index: 10;
+}
