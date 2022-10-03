@@ -41,26 +41,26 @@ odoo.define('ks_odoo11_web_listview_sticky_header.stick_header', function (requi
             }
         },
 
-    _onCellClick: function (event) {
-        // The special_click property explicitely allow events to bubble all
-        // the way up to bootstrap's level rather than being stopped earlier.
-        var $td = $(event.currentTarget);
-        var $tr = $td.parent();
-        var rowIndex = $tr.index();
-        if (!this._isRecordEditable($tr.data('id')) || $(event.target).prop('special_click')) {
-            return;
-        }
-        var fieldIndex = Math.max($tr.find('.o_field_cell').index($td), 0);
-        this._selectCell(rowIndex, fieldIndex, {event: event});
-    },
-    setRowMode: function (recordID, mode) {
-        var self = this;
-        return this._super.apply(this, arguments).then(function (){
-            var editMode = (mode === 'edit');
-            var $row = self._getRow(recordID);
-            self.currentRow = editMode ? $row.index() : null;
-        });
-    },
+//    _onCellClick: function (event) {
+//        // The special_click property explicitely allow events to bubble all
+//        // the way up to bootstrap's level rather than being stopped earlier.
+//        var $td = $(event.currentTarget);
+//        var $tr = $td.parent();
+//        var rowIndex = $tr.index();
+//        if (!this._isRecordEditable($tr.data('id')) || $(event.target).prop('special_click')) {
+//            return;
+//        }
+//        var fieldIndex = Math.max($tr.find('.o_field_cell').index($td), 0);
+//        this._selectCell(rowIndex, fieldIndex, {event: event});
+//    },
+//    setRowMode: function (recordID, mode) {
+//        var self = this;
+//        return this._super.apply(this, arguments).then(function (){
+//            var editMode = (mode === 'edit');
+//            var $row = self._getRow(recordID);
+//            self.currentRow = editMode ? $row.index() : null;
+//        });
+//    },
     on_attach_callback: function () {
         var self = this;
         self.decorateBadgeUI();
