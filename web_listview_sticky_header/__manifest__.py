@@ -3,7 +3,7 @@
     'name': "List View Sticky Header",
 
     'summary': """
-      List View Sticky Header v15.0""",
+      List View Sticky Header v16.0""",
 
     'description': """
 	- Sticky Header
@@ -13,7 +13,7 @@
 	- Header Fix
 	- Table Header Fix
 	- Table List Fix
-	- Table Hedar Sticky
+	- Table Header Sticky
 	Tree view header,
 	header freeze,
 	odoo custom view app,
@@ -35,15 +35,13 @@
     'license': 'LGPL-3',
     'currency': 'EUR',
     'category': 'Tools',
-    'version': '15.0.1.0.2',
-    'images': ['static/description/LIst_View_Stick_Header.jpg'],
+    'version': '16.0.1.0.0',
+    'images': ['static/description/List_View_Stick_Header.jpg'],
     'depends': ['base'],
 
     'assets': {
         'web.assets_backend': [
-            'web_listview_sticky_header/static/lib/stickytableheaders/jquery.stickytableheaders.js',
-            'web_listview_sticky_header/static/js/stick_headers.js',
-            'web_listview_sticky_header/static/css/main.css',
+            'web_listview_sticky_header/static/scss/Listview_sticky_header.scss',
         ]
     }
 
