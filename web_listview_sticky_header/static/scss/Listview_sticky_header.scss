@@ -9,3 +9,7 @@
 .o_list_view .table-responsive .table thead {
 z-index: 1;
 }
+
+.o_field_x2many .table-responsive {
+    overflow: auto!important;
+}
