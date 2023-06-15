@@ -35,7 +35,7 @@
     'license': 'LGPL-3',
     'currency': 'EUR',
     'category': 'Tools',
-    'version': '16.0.1.0.1',
+    'version': '16.0.1.0.2',
     'images': ['static/description/List_View_Sticky_Header.jpg'],
     'depends': ['base'],
 
