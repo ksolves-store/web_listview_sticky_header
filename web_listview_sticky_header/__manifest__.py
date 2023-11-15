@@ -31,10 +31,10 @@
     """,
 
     'author': "Ksolves India Ltd.",
-    'website': "https://www.ksolves.com/",
+    'website': "https://store.ksolves.com/",
     'license': 'LGPL-3',
     'category': 'Tools',
-    'version': '14.0.1.0.5',
+    'version': '14.0.1.0.6',
     'images': ['static/description/main.jpg'],
     'depends': ['base'],
 
